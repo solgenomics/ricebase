@@ -185,7 +185,7 @@
 	  menu => [
 		   {
 		    name => 'Gramene',
-		    link => 'www.gramene.org/',
+		    link => 'http://www.gramene.org/',
 		    desc => 'Gramene',
 		   },
 		  ]
