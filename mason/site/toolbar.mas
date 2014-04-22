@@ -184,18 +184,10 @@
 	  desc => 'View and compare chromosomes from various organisms.',
 	  menu => [
 		   {
-		    name => 'Cassava 2011',
-		    link => '/cview/map.pl?map_id=1',
-		    desc => 'Cassava Genetic Map (Rabbi et al, 2011)',
+		    name => 'Gramene',
+		    link => 'www.gramene.org/',
+		    desc => 'Gramene',
 		   },
-		   { name => 'Genome' },
-                   {
-                     name => 'Cassava genome browser at JGI',
-                     link => 'http://www.phytozome.net/cgi-bin/gbrowse/cassava/',
-                     desc =>
-                         'The cassava genome, sequenced by the Joint Genome Initiative',
-                 },
-
 		  ]
 	 },
 	 ]
