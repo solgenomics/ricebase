@@ -184,6 +184,11 @@
 	  desc => 'View and compare chromosomes from various organisms.',
 	  menu => [
 		   {
+		    name => 'Genome Browser (JBrowse)',
+		    link => '/jbrowse/',
+		    desc => 'JBrowse'
+		   },
+		   {
 		    name => 'Gramene',
 		    link => 'http://www.gramene.org/',
 		    desc => 'Gramene',
