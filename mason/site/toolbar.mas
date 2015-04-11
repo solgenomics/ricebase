@@ -186,7 +186,12 @@
 		   {
 		    name => 'Genome Browser (JBrowse)',
 		    link => '/jbrowse/',
-		    desc => 'JBrowse'
+		    desc => 'JBrowse Public'
+		   },
+		   {
+		    name => 'Genome Browser - HDRA (JBrowse)',
+		    link => '/jbrowseHDRA/',
+		    desc => 'JBrowse with HDRA data'
 		   },
 		   {
 		    name => 'Gramene',
