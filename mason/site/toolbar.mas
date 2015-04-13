@@ -179,19 +179,19 @@
 	  },
 
 	 {
-	  name => 'maps',
+	  name => 'Genome',
 	  link => '',
 	  desc => 'View and compare chromosomes from various organisms.',
 	  menu => [
 		   {
 		    name => 'Genome Browser (JBrowse)',
-		    link => '/jbrowse/',
+		    link => '/publicjbrowse/',
 		    desc => 'JBrowse Public'
 		   },
 		   {
 		    name => 'Genome Browser - HDRA (JBrowse)',
-		    link => '/jbrowseHDRA/',
-		    desc => 'JBrowse with HDRA data'
+		    link => '/restrictedjbrowse/',
+		    desc => 'JBrowse Restricted'
 		   },
 		   {
 		    name => 'Gramene',

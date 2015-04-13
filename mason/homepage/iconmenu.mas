@@ -158,7 +158,8 @@ pages.
       <ul>
             <div class="submenu GenomesSequencesSubMenu">
                 <li><a href="/organism/47476/view/"><i>Oryza sativa</i> species Information</a></li>
-		<li><a href="/jbrowse/">Genome Browser (JBrowse)</a></li>
+		<li><a href="/publicjbrowse/">Genome Browser (JBrowse)</a></li>
+		<li><a href="/restrictedjbrowse/">Genome Browser (JBrowse) - Restricted</a></li>
 		<li><a href=""></a>&nbsp;<li>
 
             </div>
