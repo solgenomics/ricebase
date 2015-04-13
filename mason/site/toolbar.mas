@@ -179,19 +179,19 @@
 	  },
 
 	 {
-	  name => 'Genome',
+	  name => 'genomes',
 	  link => '',
 	  desc => 'View and compare chromosomes from various organisms.',
 	  menu => [
 		   {
 		    name => 'Genome Browser (JBrowse)',
 		    link => '/publicjbrowse/',
-		    desc => 'JBrowse Public'
+		    desc => 'JBrowse Public',
 		   },
 		   {
 		    name => 'Genome Browser - HDRA (JBrowse)',
 		    link => '/restrictedjbrowse/',
-		    desc => 'JBrowse Restricted'
+		    desc => 'JBrowse Restricted',
 		   },
 		   {
 		    name => 'Gramene',
@@ -215,7 +215,7 @@
 jQuery( function() {
   CXGN.Page.Toolbar.addmenu('search');
   CXGN.Page.Toolbar.addmenu('manage');
-  CXGN.Page.Toolbar.addmenu('maps');
+  CXGN.Page.Toolbar.addmenu('genomes');
   CXGN.Page.Toolbar.addmenu('analyze');
   CXGN.Page.Toolbar.hideall();
 });
