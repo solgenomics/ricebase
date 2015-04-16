@@ -20,7 +20,7 @@ $prop_id=> ''
 
 <& /util/import_javascript.mas, classes => ["CXGN.Page.Form.JSFormPage"] &>
 
-<&| /page/info_section.mas, title=>'Cassava genomes sequencing project data', collapsible=>1 &>
+<&| /page/info_section.mas, title=>'Genome sequencing project data', collapsible=>1 &>
 
 <& /page/form.mas,
   object_type          => 'organismprop', 
