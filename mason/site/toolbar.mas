@@ -184,14 +184,24 @@
 	  desc => 'View and compare chromosomes from various organisms.',
 	  menu => [
 		   {
-		    name => 'Genome Browser (JBrowse)',
+		    name => 'Genome Browser - nipponbare',
 		    link => '/publicjbrowse/',
-		    desc => 'JBrowse Public',
+		    desc => 'Genome Browser - nipponbare',
 		   },
 		   {
-		    name => 'Genome Browser - HDRA (JBrowse)',
+		    name => 'Genome Browser - 93-11',
+		    link => '/93-11_jbrowse/',
+		    desc => 'Genome Browser - 93-11',
+		   },
+		   {
+		    name => 'Genome Browser - rufipogon',
+		    link => '/rufipogon_jbrowse/',
+		    desc => 'Genome Browser - rufipogon',
+		   },
+		   {
+		    name => 'Genome Browser -nipponbare (HDRA)',
 		    link => '/restrictedjbrowse/',
-		    desc => 'JBrowse Restricted',
+		    desc => 'Genome Browser -nipponbare (HDRA) Restricted',
 		   },
 		   {
 		    name => 'Gramene',
