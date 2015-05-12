@@ -79,8 +79,8 @@ pages.
     }
 
     .GenomesSequencesSubMenu {
-    	width: 227px;
-    	height: 50px;
+    	height: 100px;
+    	width: 500px;
     	padding-top: 15px;
     	position: relative;
     	top: 0px;
@@ -158,8 +158,10 @@ pages.
       <ul>
             <div class="submenu GenomesSequencesSubMenu">
                 <li><a href="/organism/47476/view/"><i>Oryza sativa</i> species Information</a></li>
-		<li><a href="/publicjbrowse/">Genome Browser (JBrowse)</a></li>
-		<li><a href="/restrictedjbrowse/">Genome Browser (JBrowse) - Restricted</a></li>
+		<li><a href="/publicjbrowse/">Nipponbare Genome Browser (JBrowse)</a></li>
+		<li><a href="/93-11_jbrowse/">93-11 Genome Browser (JBrowse)</a></li>
+		<li><a href="/rufipogon_jbrowse/">Rufipogon Genome Browser (JBrowse)</a></li>
+		<li><a href="/restrictedjbrowse/">Genome Browser - Restricted</a></li>
 		<li><a href=""></a>&nbsp;<li>
 
             </div>
