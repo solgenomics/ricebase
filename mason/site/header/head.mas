@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="/documents/inc/ricebase.css" type="text/css" />
   <link rel="stylesheet" href="/documents/inc/jquery-ricebase-theme/jquery-ui.css" type="text/css" />
   <link rel="stylesheet" href="/documents/inc/colorbox/colorbox.css" type="text/css" />
+  <link rel="stylesheet" href="/css/jstree/themes/default/style.min.css" />
 
   <link rel="search" type="application/opensearchdescription+xml" title="Ricebase Search" href="/documents/sgn_sol_search.xml" />
 
