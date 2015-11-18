@@ -1,0 +1,232 @@
+
+<%args>
+</%args>
+
+<%perl>
+    $c->view('Toolbar')->toolbar_data(
+	[
+	 {
+	  name => 'search',
+	  link => '/search/direct_search.pl?search=loci',
+	  desc => 'Search our database.',
+	  menu => [
+		   {
+		    name => 'Wizard',
+		    link => '/breeders/search',
+		    desc => 'quickly retrieve datasets'
+		   },
+		   
+#		   {
+#		    name => 'Organisms',
+#		    link => '/search/organisms',
+#		    desc => 'search for organisms'
+#		   },
+		   {
+		       name => 'Accessions and plots',
+		    link => '/search/phenotypes/stock',
+		    desc => 'Search for mutants, accessions, and traits.'
+		   },
+		   {
+		    name => 'Markers',
+		    link => '/search/markers',
+		    desc => 'Marker search.'
+		   },
+		   {
+		    name => 'Images',
+		    link => '/search/images',
+		    desc => 'Search images contained in the SGN database.',
+		   },
+		   {
+		    name => 'People',
+		    link => '/search/directory',
+		    desc => 'Search database of researchers who use SGN.',
+		   },
+		   {
+		    name => 'FAQ',
+		    link => '/help/faq.pl',
+		    desc => 'Frequently asked questions from users of SGN.',
+		   },
+		  ]
+	 },
+	 {
+	  name => 'manage',
+	  link => '',
+	  desc => 'Manage breeding trials and data.',
+	  menu => [
+		   { 
+		    name => 'Breeding programs',
+		    link => '/breeders/manage_programs',
+		    desc => 'Manage breeding programs.',
+		   },
+
+		   { 
+		    name => 'Accessions',
+		    link => '/breeders/accessions',
+		    desc => 'Manage accessions.',
+		   },
+
+		   { 
+		    name => 'Trials',
+		    link => '/breeders/trials',
+		    desc => 'Set up and manage trials.',
+		   },
+		   {
+		    name => 'Locations',
+		    link => '/breeders/locations',
+		    desc => 'Set up and manage locations.',
+		   },
+		   {
+		    name => 'Crosses',
+		    link => '/breeders/crosses',
+		    desc => 'Set up and manage crosses.',
+		   },
+		   {
+		    name => 'Phenotyping',
+		    link => '/breeders/phenotyping',
+		    desc => 'Upload and manage phenotypes.',
+		   },
+		   {
+		    name => 'Field Book App',
+		    link => '/fieldbook',
+		    desc => 'Manage files for Field Book App',
+		   },
+		   {
+		    name => 'Barcodes',
+		    link => '/barcode',
+		    desc => 'Access barcode functions.',
+		   },
+		   {
+		    name => 'Download',
+		    link => '/breeders/download',
+		    desc => 'Download data using lists.',
+		   },
+		  ]
+	 },
+	 {
+
+	  name => 'analyze',
+	  link => '/tools/',
+	  desc => 'Tools for biologists.',
+	  menu => [
+		   
+		   { name => 'Breeder Tools' },
+		   { name=> 'Breeder Home',
+		     link=> '/breeders/home',
+		     desc=> 'Access breeder functionalities from the breeders homepage. Requires login.'
+		   },
+		   { name => 'Barcode Tools',
+		     link => '/barcode/',
+		     desc => 'Tools to create and manage barcodes.',
+		   },
+		   { name => 'Genomic Selection',
+		     link => '/solgs/search/',
+                     desc => 'Estimate genomic estimated breeding values (GEBVs) of your selection populations using prediction models.',
+		   },
+		   #Sequence Analysis
+		   { name => 'Sequence Analysis' },
+		   {
+		    name => 'BLAST',
+		    link => '/tools/blast/',
+		    desc =>
+		    'Compare a given sequence to known sequences using the Basic Local Alignment Search Tool, NCBI BLAST v. 2.2.9 [May-01-2004]'
+		   },
+		   # {
+		   #  name => 'Alignment Analyzer',
+		   #  link => '/tools/align_viewer/',
+		   #  desc =>
+		   #  'Calculate alignments using Muscle v3.6, or view existing alignments using our navigator.'
+		   # },
+		   # {
+		   #   name => 'Tree Browser',
+		   #  link => '/tools/tree_browser/',
+		   #  desc =>
+		   #  'Visualize and manipulate phylogenetic trees from a newick-formatted string.'
+		   # },
+		   # {
+		   #  name => 'Intron Finder',
+		   #  link => '/tools/intron_detection/find_introns.pl',
+		   #   desc =>
+		   #  'The SGN Intron Finder works by doing a BLAST search for <em>Arabidopsis thaliana</em> proteins that are similar to the translated protein sequence of the DNA input.'
+		   # },
+		   #Mapping
+		   # { name => 'Mapping' },
+		   # {
+		   #  name => 'Comparative Viewer',
+		   #  link =>
+		   #  '/cview/view_chromosome.pl?show_offsets=1&amp;show_ruler=1&amp;show_offsets=1',
+		   #  desc =>
+		   #  'Compare chromosomes from different maps, side by side.',
+		   # },
+		   # {
+		   #  name => 'CAPS Designer',
+		   #  link => '/tools/caps_designer/caps_input.pl',
+		   #  desc =>
+		   #  'Designs CAPS (Cleaved Amplified Polymorphic Sequence) assays for up to twelve sequences. Two types of nucleotide inputs are accepted: fasta sequences and clustal aligment. It generates a list of polymorphic enzymes that cut the sequences into different length products.'
+		   # },
+		   # {
+		   #  name => 'In Silico PCR',
+		   #  link => '/tools/insilicopcr',
+		   #   desc => 'In Silico PCR tool based on BLAST'
+		   # },
+
+		   { name => "Other" },
+		   {
+		    name => 'Ontology Browser',
+		    link => '/tools/onto/',
+		    desc => 'AJAX ontology browser.'
+		   },
+		  ],
+	  },
+
+	 {
+	  name => 'genomes',
+	  link => '',
+	  desc => 'View and compare chromosomes from various organisms.',
+	  menu => [
+		   {
+		    name => 'Genome Browser - nipponbare',
+		    link => '/publicjbrowse/',
+		    desc => 'Genome Browser - nipponbare',
+		   },
+		   {
+		    name => 'Genome Browser - 93-11',
+		    link => '/93-11_jbrowse/',
+		    desc => 'Genome Browser - 93-11',
+		   },
+		   {
+		    name => 'Genome Browser - rufipogon',
+		    link => '/rufipogon_jbrowse/',
+		    desc => 'Genome Browser - rufipogon',
+		   },
+		   {
+		    name => 'Genome Browser -nipponbare (HDRA)',
+		    link => '/restrictedjbrowse/',
+		    desc => 'Genome Browser -nipponbare (HDRA) Restricted',
+		   },
+		   {
+		    name => 'Gramene',
+		    link => 'http://www.gramene.org/',
+		    desc => 'Gramene',
+		   },
+		  ]
+	 },
+	 ]
+				      );
+	 
+	 
+
+
+    print $c->view('Toolbar')->as_html;
+
+</%perl>
+
+<& /util/import_javascript.mas, classes => ['CXGN.Page.Toolbar','jquery', 'jquerymigrate'] &>
+<script language="JavaScript" type="text/javascript">
+jQuery( function() {
+  CXGN.Page.Toolbar.addmenu('search');
+  CXGN.Page.Toolbar.addmenu('manage');
+  CXGN.Page.Toolbar.addmenu('genomes');
+  CXGN.Page.Toolbar.addmenu('analyze');
+  CXGN.Page.Toolbar.hideall();
+});
+</script>

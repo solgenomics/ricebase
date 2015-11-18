@@ -1,0 +1,11 @@
+<li class="dropdown"><a class="menu_click_dropdown dropdown-toggle" data-toggle="dropdown" href="/breeders/home">Analyze</a>
+  <ul class="dropdown-menu">
+    <li><a href="/breeders/home">Breeder Tools</a></li>
+    <li><a href="/breeders/barcode">Barcode Tools</a></li>
+    <li><a href="/solgs/search">Genomic Selection</a></li>
+
+    <li role="separator" class="divider"></li>
+    <li><a href="/tools/blast/">BLAST</a></li>
+
+  </ul>
+</li>

@@ -1,0 +1,22 @@
+<li class="dropdown"><a class="menu_click_dropdown dropdown-toggle" data-toggle="dropdown" href="/search/">Manage</a>
+  <ul class="dropdown-menu">
+    <li><a href="/breeders/manage_programs">Breeding programs</a></li>
+
+    <li role="separator" class="divider"></li>
+    <li><a href="/breeders/accessions">Accessions</a></li>
+    <li><a href="/breeders/trials">Trials</a></li>
+    <li><a href="/breeders/locations">Locations</a></li>
+
+    <li role="separator" class="divider"></li>
+    <li><a href="/breeders/crosses">Crosses</a></li>
+
+    <li role="separator" class="divider"></li>
+    <li><a href="/breeders/phenotyping">Phenotyping</a></li>
+    <li><a href="/fieldbook">Field Book App</a></li>
+    <li><a href="/barcode">Barcodes</a></li>
+
+    <li role="separator" class="divider"></li>
+    <li><a href="/breeders/download">Download</a></li>
+
+  </ul>
+</li>
