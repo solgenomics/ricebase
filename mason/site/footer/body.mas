@@ -6,6 +6,22 @@
 
 
 
+</td></tr></table>
+   <!-- Google Analytics Code -->
+   <!-- Google Analytics Code moved to header -->
+
+<!-- LOAD WORKING MODAL AND LIST MODAL AT END SO THAT THEY ALWAYS APPEAR ON TOP -->
+<& /site/list.mas &>
+
+<!--
+<div id="working" style="text-align : center;">
+  <img src="/img/wheel.gif" />
+  <div id="working_msg"></div>
+</div>
+-->
+
+
+
 <br /><br />
 <!-- BEGIN FOOTER-->
 
@@ -13,8 +29,4 @@
 
 Ricebase is based at the <a href="http://bti.cornell.edu">Boyce Thompson Institute</a>.
 
-
-</td></tr></table>
-   <!-- Google Analytics Code -->
-   <!-- Google Analytics Code moved to header -->
 
