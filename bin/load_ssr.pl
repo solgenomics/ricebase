@@ -179,16 +179,40 @@ eval {
             }
             else {  message( "Marker name : $marker_name, marker_id found: $marker_id\n" ) ; }
 
-	    my $band_size;
-	    $band_size = $worksheet->get_cell($stock_row{$stock_name},$marker_col{$marker_name})->value();
+	    my $bands_cell;
+	    $bands_cell = $worksheet->get_cell($stock_row{$stock_name},$marker_col{$marker_name});
 
-	    if ($band_size !~ /^[0-9]*$/) {
-                message("non-numeric band size ($band_size). Skipping!!");
+	    if (!$bands_cell) {
+		message("Missing value found for stock name $stock_name marker $marker_name\n");
+		next;
+	    }
+	    my $bands_string = $bands_cell->value();
+	    my @bands_raw = split('/',$bands_string);
+
+	    my @bands;
+
+	    #check band sizes
+	    for my $raw_band_size (@bands_raw) {
+		if ($raw_band_size !~ /^[0-9]+$/) {
+		    message("non-numeric band size ($raw_band_size). Skipping!!\n");
+		} elsif ($raw_band_size == 0) {
+		    message("band size is zero ($raw_band_size). Skipping!!\n");
+		} else {
+		    push (@bands, $raw_band_size);
+		}
 	    }
 
-	    my $pcr_experiment = $sgn_schema->resultset("PcrExperiment")->create({marker_id => $marker_id, stock_id => $stock_id});
-	    my $pcr_exp_accession = $sgn_schema->resultset("PcrExpAccession")->create({pcr_experiment_id => $pcr_experiment->pcr_experiment_id(), stock_id => $stock_id});
-	    my $pcr_product = $sgn_schema->resultset("PcrProduct")->create({pcr_exp_accession_id => $pcr_exp_accession->pcr_exp_accession_id(), band_size => $band_size});
+	    # only add if bands are found
+	    if (scalar(@bands) > 0) {
+
+		my $pcr_experiment = $sgn_schema->resultset("PcrExperiment")->create({marker_id => $marker_id, stock_id => $stock_id});
+		my $pcr_exp_accession = $sgn_schema->resultset("PcrExpAccession")->create({pcr_experiment_id => $pcr_experiment->pcr_experiment_id(), stock_id => $stock_id});
+    
+		for my $band_size (@bands) {
+
+		    my $pcr_product = $sgn_schema->resultset("PcrProduct")->create({pcr_exp_accession_id => $pcr_exp_accession->pcr_exp_accession_id(), band_size => $band_size});
+		}
+	    }
         }
     }
 };
