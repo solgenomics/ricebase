@@ -1,15 +1,6 @@
 <li class="dropdown"><a class="menu_click_dropdown dropdown-toggle" data-toggle="dropdown" href="/genomes/">Genomes</a>
   <ul class="dropdown-menu">
-    <li><a href="/publicjbrowse/">Genome Browser - nipponbare</a></li>
-    <li><a href="/93-11_jbrowse/">Genome Browser - 93-11</a></li>
-    <li><a href="/rufipogon_jbrowse/">Genome Browser - rufipogon</a></li>
-
-    <li role="separator" class="divider"></li>
-    <li><a href="/restrictedjbrowse/">Genome Browser - nipponbare (HDRA)</a></li>
-
-    <li role="separator" class="divider"></li>
-    <li><a href="http://www.gramene.org/">Gramene</a></li>
-    <li><a href="http://rice.plantbiology.msu.edu/">Genome Annotation Project Release 7 (MSU7)</a></li>
+    <li><a href="/jbrowse/">JBrowse Genome Browser - Nipponbare</a></li>
 
   </ul>
 </li>
