@@ -17,6 +17,13 @@
                 <br />
 		Information on using the Genome Browser (JBrowse) can be found here:
 		<a href="http://jbrowse.org"> JBrowse </a>
+		<br>
+		<br>
+		<b>Question:</b> How do I download SSR tracks from the genome browser?
+		<br>
+		<b>Answer:</b>  See the following guide:
+		<a href="/documents/help/tutorial_exporting_SSRs.pdf"> SSR GFF3 tutorial </a>
+
                 </p>
               </td>
             </tr>
