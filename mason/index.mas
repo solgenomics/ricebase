@@ -1,39 +1,50 @@
 <%args>
 $schema
-$static_content_path => undef
-$show_accept_dialog => undef
 </%args>
 
-<& /util/import_javascript.mas, classes=>[ "jquery", "jqueryui", "jquery.cookie"] &>
+<& homepage/carousel.mas &>
 
-<table cellpadding="0">
-
-<tr><td colspan="2">
-<& homepage/iconmenu.mas &>
-</td></tr>
-
-<tr>
-<td colspan="2">
-
-
-Welcome to Ricebase. 
-
-
-</td>
-</tr>
-
-<tr>
-
-<td width="300">
-
-
-</td></tr>
-
-
-</table>
-
-
-
-
-
-
+<br/>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-6 col-md-6 col-lg-6">
+      
+      <div class="panel panel-info">
+        <div class="panel-heading">News</div>
+        <div class="panel-body" style="overflow:hidden">
+          <& homepage/news.mas &>
+	          </div>
+      </div>
+      
+      <div class="panel panel-info">
+        <div class="panel-heading">SGN Featured</div>
+    	  <table class="table table-hover table-striped">
+    	    <tbody>
+    	      <tr><td><div class="container-fluid"><& homepage/publication_of_the_week.mas &></div></td></tr>
+    	    </tbody>
+    	  </table>
+      </div>
+      
+     
+    </div>
+      
+      <div class="col-sm-6 col-md-6 col-lg-6">
+        
+        <div class="panel panel-info">
+          <div class="panel-heading">Events</div>
+          <div class="panel-body" style="overflow:hidden">
+            <& homepage/events.mas &>
+          </div>
+        </div>
+        
+        <div class="panel panel-info">
+          <div class="panel-heading">Links</div>
+          <div class="panel-body" style="overflow:hidden">
+            <& homepage/other_links.mas &>
+          </div>
+        </div>
+        
+      </div>
+      
+  </div>
+</div>
