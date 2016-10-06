@@ -1,4 +1,4 @@
-<li class="dropdown"><a class="menu_click_dropdown dropdown-toggle" data-toggle="dropdown" href="/search/">Manage</a>
+<li class="dropdown"><a class="menu_click_dropdown dropdown-toggle" data-toggle="dropdown" href="/breeders/home">Manage</a>
   <ul class="dropdown-menu">
     <li><a href="/breeders/manage_programs">Breeding programs</a></li>
 
