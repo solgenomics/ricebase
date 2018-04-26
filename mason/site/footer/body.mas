@@ -1,31 +1,9 @@
-<%init>
-	my $feedback_email = eval{ $c->get_conf('email') };
-	$feedback_email = $feedback_email ? qq|<a class="footer" href="mailto:$feedback_email">$feedback_email</a>|
-	                                  : '<span style="font-weight: bold; color: red">[email not set]</b>';
-</%init>
 
+<& /site/footer/common.mas &>
 
-
-</td></tr></table>
-   <!-- Google Analytics Code -->
-   <!-- Google Analytics Code moved to header -->
-
-<!-- LOAD WORKING MODAL, LIST MODAL, AND CALENDAR MODAL AT END SO THAT THEY ALWAYS APPEAR ON TOP -->
-<& /site/list.mas &>
-<& /calendar/events_by_user_role.mas &>
-
-<!--
-<div id="working" style="text-align : center;">
-  <img src="/img/wheel.gif" />
-  <div id="working_msg"></div>
-</div>
--->
-
-
-
-<br /><br />
 <!-- BEGIN FOOTER-->
 
+<br /><br />
 <hr>
 
 Ricebase is based at the <a href="http://bti.cornell.edu">Boyce Thompson Institute</a>.
